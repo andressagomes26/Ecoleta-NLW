@@ -1,5 +1,3 @@
-![A cute kitten][nlw](https://user-images.githubusercontent.com/60404990/83956180-9d0d9b80-a831-11ea-9bc4-15c7d680fff4.png)
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60404990/83956180-9d0d9b80-a831-11ea-9bc4-15c7d680fff4.png">
 </p>
