@@ -8,6 +8,9 @@ O **Next Level Week** é uma experiência online fornecida pela Rocketseat que o
 # Projeto<img width="55" height="45" src="https://user-images.githubusercontent.com/60404990/83957348-1ca16780-a83e-11ea-80ab-0e33dd53ba79.jpg">
 Em decorrência da semana do meio ambiente o projeto Ecoleta tem como principal objetivo cadastrar empresas que realizam coletas de determinados itens, como, pilhas, baterias, resíduos eletrônicos, entre outros. 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60404990/83958025-7e180500-a843-11ea-9c68-8e6154091c24.jpg">
+</p>
 
 # Tecnologias
 - HTML
