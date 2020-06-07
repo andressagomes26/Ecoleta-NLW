@@ -1,0 +1,186 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; /*Alinhamento de caixa pelo lado de fora (por dentro = flex)*/
+}
+
+#page-create-point header{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span{
+    margin-right: 12px;
+    background-image: url('../extras-aula-1/extras-aula-1/icones/arrow-left.svg');
+    
+    display: flex;
+
+    width: 20px;
+    height: 22px;
+}
+
+form{
+    background-color: white;
+
+    margin: 80px auto; /*Alinhamento de caixa pelo lado de fora (por dentro = flex)*/
+
+    margin-top: 80px; /* Margem do topo */
+    padding: 64px; /* Preenchimento da caixa. */
+    border-radius: 8px;  /* Bordas */
+    max-width: 730px; /* Largura máxima*/  
+} 
+
+form h1{
+    font-size: 36px; /*Tamanho da fonte do título*/
+}
+
+form fieldset{
+    margin-top: 64px;  /* Margem do topo */
+    border: 0; /* Tirar a borda lateral*/
+}
+
+form legend{
+    margin-bottom: 40px; /*Separar o texto 'Dados da entidade' do que vem abaixo dele */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form legend span{
+    color: var(--title-color);
+    font-size: 14px;
+}
+
+form .field{
+    flex: 1;
+
+    display: flex; /* Permite que os elementos fiquem lado a lado*/ 
+    flex-direction: column; /*Organizar os elementos em coluna*/
+
+    margin-bottom: 24px; /*Espaço entre os label e o input*/
+
+}
+
+form .field-group{
+    display: flex; /*Os elementos inputs para estado, cidade, numero = podem ficar lado a lado ficar*/
+
+}
+
+form input,
+form select{
+    background-color: #f0f0f5; /*Cor do input*/
+
+    border: 0; /* Tira a borda */
+    padding: 16px 24px; /* Tamanho do espamento interno na altura e laterais*/
+    font-size: 16px; /*Tamanho da fonte dentro do input*/
+    border-radius: 8px; /*Raio da borda*/
+    outline: none;  /*Tira a seleção da caixa*/
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 14px; /*Tamnho do label*/
+    margin-bottom: 8px;   /* Espaço do label até embaixo*/
+}
+
+form .field-group .field + .field{
+    margin-left: 24px; /* Adiciona uma margem a esqueda
+    dos inputs cidade e número, a fim de separar os inputs
+    que estão lado a lado, exemplo estado - cidade */
+}
+
+form button{
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--primary-color); /*O botão vai ser da cor da variável definida em main.css*/
+    border-radius: 8px;
+
+    color: white; /*Cor da letra*/
+    font-weight: bold; /*Negrito*/
+    font-size: 16px;
+
+    border: 0; /*Retira a borda do botão*/ 
+
+    margin-top: 40px; /*Afastar o botão da parte de cima*/
+
+    transition: background-color 400ms; /* Tempo p mudar a cor do botão quando o mouse for passado em cima */ 
+}
+
+form button:hover{
+    background-color: #2fb86e; 
+}
+
+.itens-grid{
+    display: grid; /*Permite, mais fácil do que o flex, criar várias linhas e colunas para colocar os elementos*/
+
+    grid-template-columns: 1fr 1fr 1fr; /*Cria 3 colunas*/
+
+    gap: 16px; /*Separa as colunas dos grids*/
+}
+
+.itens-grid li{
+    background-color: #f5f5f5; /* Cor de fundo para cada item */
+    list-style: none; /*Tira os pontinhos das listas*/
+
+    border: 2px solid #f5f5f5; /*Acrescenta uma borda*/
+    border-radius: 8px; /* Raio da borda */
+
+    height: 180px; /*Altura*/
+
+    padding: 32px 24px 16px; /*Espaçamento topo, laterais, embaixo*/
+
+    display: flex; /* Alinhar os elementos (imagem e texto) dentro da caixa*/
+    flex-direction: column; /*Alinhar em colunas*/
+    align-items: center; /*Alinhar os itens no centro*/
+    justify-content: space-between; /*Coloca um espaço entre os elementos*/
+
+    text-align: center; /*Alinhar os textos no centro*/
+
+    cursor: pointer; /*Muda o cursor para uma mãozinha ao passar o mouse dentro do item*/
+
+}
+.itens-grid li span{
+    margin-top: 12px; /* Dá uma separação no topo */
+    font-size: 16px;
+
+    flex:1; /*Preenche o tamanho sozinho*/
+    /* diplay e align-itens: muda a posição dos elementos para o centro */
+    display: flex;
+    align-items: center;
+
+    color: var(--title-color); /*Cor padrão para o texto*/
+}
+
+.itens-grid li.selected{
+    background: #e1faec;     /*Muda a cor do item quando ele é selecionado*/
+    border: 2px solid #34cb79; /* Coloca uma borda no item quando ele é selecionado*/
+
+}
+
+.itens-grid li img,
+.itens-grid li span{
+    pointer-events: none; /*Não há eventos caso a pessoa clique na foto ou apenas imagem
+                          mas sim se clicar na caixinha inteira */
+}

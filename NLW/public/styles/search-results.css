@@ -1,0 +1,98 @@
+body{
+    background-color: white;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    background: #f0f0f5;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 16rem;
+    z-index: -1;
+}
+
+#page-search-results{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; /*Alinhamento de caixa pelo lado de fora (por dentro = flex)*/
+}
+
+#page-search-results header{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-search-results header a{
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-search-results header a span{
+    margin-right: 12px;
+    background-image: url('../extras-aula-1/extras-aula-1/icones/arrow-left.svg');
+    
+    display: flex;
+
+    width: 20px;
+    height: 22px;
+}
+
+main{
+    margin: 48px;    /* Vai dar um espaço entre o topo e o conteúdo do meio e tbm no fundo*/
+
+}
+main h4{
+    /*Alterando a fonte do '2 pontos encontrados'*/
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+
+    margin-bottom: 32px;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*Transforma para 3 colunas */
+    gap: 24px;
+}
+
+main .card img{
+    width: 100%;
+    height: 150px; /*Altura fixa de 150px*/
+
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /*Colocando raio da borda apenas na parte de cima das imagens*/
+}
+
+main .card h1{
+    /*Configurações para os títulos = colectoria e papersider */
+    margin-top: 32px;   /*Espaço entre imagens-títulos*/
+    
+    font-size: 36px;  
+    line-height: 41px;  
+
+    color: #322153;
+}
+
+main .card h3{
+    margin: 24px 0; /*Espaço em cima-embaixo e nas laterais do subtítulo*/
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: var(--primary-color);
+}
+
+main .card p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C80;
+}

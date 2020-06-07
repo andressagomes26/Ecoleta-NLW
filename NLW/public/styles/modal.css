@@ -1,0 +1,103 @@
+#modal{
+    background-color: #0E0A14ef; /*Cor de fundo*/
+    
+    /* Para que o modal cubra toda a página*/
+    height: 100vh; /*Altura*/
+    width: 100vw; /*Largura*/
+
+    position: fixed; /*Irá ficar em uma posição fixa na página*/
+    top:0; /*A posição desse modal (fundo preto por cima da tela) inicia no topo de tela*/
+
+    /* Configurar o conteúdo dentro da tela preta: */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+#modal .content{
+    color: white;
+
+    width: 420px;
+}
+
+#modal .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px; /*O header separando da parte de baixo */
+}
+
+#modal .header a{
+    background-image: url('../extras-aula-1/extras-aula-1/icones/x.svg');
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    font-size: 0.01px;
+
+}
+
+#modal .header h1{
+    color: white;
+    
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#modal form label{
+    font-size: 14px;
+    line-height: 16px;
+
+    display: block; /*O display irá ocupar uma linha todaa*/
+    margin-bottom: 8px; /*Espaço entre o label (cidade) e o que vem abaixo*/
+}
+
+#modal form .field{
+    display: flex;
+}
+
+#modal form input{
+    flex: 1; /*Pega todo o espaço que sobra para ele*/
+
+    background-color: #f0f0f5;
+    border-radius: 8px 0 0 8px; /* Arredonda apenas as duas bordas da esquerda no input*/
+    border: 0;
+
+    padding: 16px 24px;
+    
+    font-size: 16px;
+    color: #6c6c80;
+}
+
+#modal form button{
+    width: 72px;
+    height: 72px;
+
+    background-color: var(--primary-color);
+    border: 0; /* Retira a borda do botão */
+    border-radius: 0 8px 8px 0;  /*Arredonda apenas as duas bordas de fora do botão*/
+
+}
+
+#modal form button:hover{
+    background-color: #2fb85e; /*Muda a cor do botão ao passar o mouse em cima*/
+}
+
+#modal.hide{
+    display: none;
+}
+
+/*Configurando o model point-created*/
+#modal.point .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point h1{
+    color: white;
+    margin-top: 28px;
+}
