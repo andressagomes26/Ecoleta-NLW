@@ -16,4 +16,3 @@ Em decorrência da semana do meio ambiente o projeto Ecoleta tem como principal 
 - HTML
 - CSS
 - JavaScript
-- SQL
